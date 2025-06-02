@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Hiro-Misake';
+    src: url('assets/fonts/HIROMISAKE.ttf')
+    format('truetype');
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    height: 100vh;
+    max-width: 100%;
+}
+.landing-page{
+    padding-top: 20px;
+    z-index: -999;
+}
+#home{
+    background-image: url('assets/images/samurai.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-100px);
+    height: 100vh;
+    z-index: 999;
+
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: 'Hiro-Misake';
+}
