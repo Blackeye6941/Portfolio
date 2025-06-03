@@ -16,17 +16,21 @@ body{
 }
 .landing-page{
     padding-top: 20px;
-    z-index: -999;
+    padding-bottom: 20px;
+    z-index: 999;
+    position: fixed;
+    backdrop-filter: blur(40px);
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #home{
     background-image: url('assets/images/samurai.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: translateY(-100px);
     height: 100vh;
-    z-index: 999;
-
+    position: relative;
 }
 .nav-items{
     list-style: none;
@@ -40,4 +44,18 @@ body{
     color: rgb(0, 0, 0);
     font-size: 28px;
     font-family: 'Hiro-Misake';
+}
+.home-div{
+    padding-top: 240px;
+    margin-left: 50px;
+    font-family: 'Hiro-Misake';
+}
+.main-title{
+    font-size: 4em;
+}
+.intro-text{
+    padding-top: 20px;
+    max-width: 55%;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 1) 
 }
