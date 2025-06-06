@@ -73,6 +73,10 @@ body{
     height: 100vh;
     font-family: 'Hiro-Misake';
     font-size: large;
+    background-image: url(assets/images/page2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .about-title{
     text-align: center;
@@ -88,6 +92,44 @@ body{
     width: 60%;
     max-width: 900px;
 
+}
+.scroll-container{
+    position: relative;
+    /* width: fit-content; */
+    margin: 0 auto;
+}
+.scroll-upper, .scroll-lower{
+    background-color: rgb(97, 96, 93);
+    width: 70%;
+    max-width: 800px;
+    height: 12vh;
+    display: block;
+    align-items: center;
+    margin: 0px auto;
+    border-radius: 20px;
+    z-index: 1;
+    border-left: 20px solid brown;
+    border-right: 20px solid brown;
+}
+.scroll-upper{
+    border-bottom: 2px solid white;
+}
+.scroll-lower{
+    border-top: 2px solid white;
+}
+.lock{
+    background-color: yellow;
+    width: 10vw;
+    max-width: 500px;
+    height: 8vh;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    border: 2px solid;
+    border-radius: 12px;
 }
 @keyframes typing {
     from {
