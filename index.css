@@ -78,18 +78,39 @@ body{
     background-position: center;
     background-size: cover;
 }
+.paper{
+    position: relative;
+    background:linear-gradient(
+        to bottom,
+        rgba(255, 245, 212, 0.8),
+        rgba(245, 222, 179, 0.8),
+        rgba(255, 245, 212, 0.8)
+    );
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-left: 2px solid #4e3b1f;
+    border-right: 2px solid #4e3b1f;
+    z-index: 2;
+    width: 70%;
+    max-width: 780px;
+    margin: 0 auto;
+    font-family: 'Papyrus', 'Georgia', serif;
+    font-size: 15px;
+    /* min-height: 800px; */
+}
 .about-title{
     text-align: center;
     font-size: 2.5em;
-    padding-top: 90px;
-    visibility: hidden;
+    padding-top: 10px;
+    /* visibility: hidden; */
 }
 .about-content{
     font-size: 1.5em;
     padding-top: 50px;
     text-align: center;
     margin: 0px auto;
-    width: 60%;
+    width: 80%;
     max-width: 900px;
 
 }
@@ -97,13 +118,22 @@ body{
     position: relative;
     /* width: fit-content; */
     margin: 0 auto;
+    padding-top: 80px;
+}
+.scroll-wrapper{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 2s ease;
+}
+.scroll-wrapper.open{
+    max-height: 600px;
 }
 .scroll-upper, .scroll-lower{
     background: linear-gradient(
-        to bottom right,
-        #2b2b2b,
-        #1a1a1a,
-        #2f2f2f
+        to bottom,
+        #581f1f,
+        #832020,
+        #581f1f
     );
     width: 70%;
     max-width: 800px;
@@ -113,17 +143,23 @@ body{
     margin: 0px auto;
     border-radius: 20px;
     z-index: 1;
-    border-left: 20px solid rgba(255, 255, 255, 0.1);
-    border-right: 20px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px rgb(0, 0, 0, 0.4);
+    border-left: 20px solid #2c0d0d;
+    border-right: 20px solid #2c0d0d;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1),
+    inset 0 -2px 3px rgba(0,0,0,0.4),
+    0 3px 6px rgba(0,0,0,0.3);
 }
 .scroll-upper{
     border-bottom: 2px solid white;
 }
 .scroll-lower{
     border-top: 2px solid white;
+    transition: margin-top 2s ease;
 }
-.lock{
+.scroll-wrapper.open + .scroll-lower{
+    margin-top: 600px;
+}
+/* .lock{
     background: radial-gradient(
         circle at center,
         #e50914,
@@ -142,7 +178,7 @@ body{
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5),
     inset 0 0 8px rgba(0, 0, 0, 0.6);
-}
+} */
 @keyframes typing {
     from {
         width: 0%;
