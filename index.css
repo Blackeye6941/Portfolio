@@ -186,20 +186,36 @@ body{
  .projects-title{
     text-align: center;
     font-size: 2em;
-
+    padding: 40px;
  }
  .project-list{
     display: flex;
     flex-direction: row;
     text-align: center;
     gap: 10px;
+    overflow-x:auto;
  }
  .flip-card{
     height: 35vh;
     width: 40vw;
     max-width: 100%;
+    min-width: 40vw;
+    padding: 20px;
     background-color: bisque;
 
+ }
+ .flip-card:hover{
+    translate: 360deg;
+ }
+ .flip-card-front{
+    font-size: 2em;
+    padding: 5px;
+ }
+ .flip-card-back{
+    font-size: 18px;
+ }
+ ::-webkit-scrollbar{
+    visibility: hidden;
  }
 @keyframes typing {
     from {
