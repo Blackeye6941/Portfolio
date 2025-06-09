@@ -125,9 +125,9 @@ body{
     max-height: 0;
     transition: max-height 2s ease;
 }
-.scroll-wrapper.open{
+/* .scroll-wrapper.open{
     max-height: 600px;
-}
+} */
 .scroll-upper, .scroll-lower{
     background: linear-gradient(
         to bottom,
@@ -179,6 +179,28 @@ body{
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5),
     inset 0 0 8px rgba(0, 0, 0, 0.6);
 } */
+ #projects{
+    height: 50vh;
+    font-family: 'Hiro-Misake';
+ }
+ .projects-title{
+    text-align: center;
+    font-size: 2em;
+
+ }
+ .project-list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+ }
+ .flip-card{
+    height: 35vh;
+    width: 40vw;
+    max-width: 100%;
+    background-color: bisque;
+
+ }
 @keyframes typing {
     from {
         width: 0%;
