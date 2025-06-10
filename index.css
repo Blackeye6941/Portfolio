@@ -202,16 +202,30 @@ body{
     min-width: 40vw;
     padding: 20px;
     background-color: bisque;
-
+    perspective: 1000px;
+    cursor: pointer;
  }
- .flip-card:hover{
-    translate: 360deg;
+ .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
  }
+ .flip-card.flipped .flip-card-inner{
+    transform: rotateY(180deg);
+ }
+.flip-card-inner{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    backface-visibility: hidden;
+}
  .flip-card-front{
     font-size: 2em;
     padding: 5px;
  }
  .flip-card-back{
+    transform: rotateY(180deg);
     font-size: 18px;
  }
  ::-webkit-scrollbar{
