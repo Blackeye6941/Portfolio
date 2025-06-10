@@ -14,7 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(aboutSection);
 
 if('ontouchstart' in window || navigator.maxTouchPoints > 0){
-    forEach(card => {
+    document.querySelectorAll('flip-card').forEach(card => {
         card.addEventListener('click', () => {
             card.classList.add('flipped');
         })
