@@ -197,6 +197,7 @@ body{
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     gap: 10px;
     overflow-x:auto;
  }
