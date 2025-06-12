@@ -205,7 +205,6 @@ body{
     width: 20vw;
     max-width: 100%;
     padding: 20px;
-    /* background:transparent; */
     perspective: 1000px;
     cursor: pointer;
     flex-shrink: 0;
@@ -224,9 +223,10 @@ body{
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 20px;
-    color: black;
+    color: #fff;
 }
 .flip-card-front, .flip-card-back{
     position: absolute;
