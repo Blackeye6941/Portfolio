@@ -126,9 +126,9 @@ body{
     max-height: 0;
     transition: max-height 2s ease;
 }
-.scroll-wrapper.open{
+/* .scroll-wrapper.open{
     max-height: 600px;
-}
+} */
 .scroll-upper, .scroll-lower{
     background: linear-gradient(
         to bottom,
@@ -189,8 +189,8 @@ body{
     background-size: cover;
  }
  .projects-title{
-    text-align: center;
-    font-size: 2em;
+    text-align: left;
+    font-size: 2.2em;
     padding: 40px;
  }
  .project-list{
@@ -205,11 +205,12 @@ body{
     width: 20vw;
     max-width: 100%;
     padding: 20px;
-    background:transparent;
+    /* background:transparent; */
     perspective: 1000px;
     cursor: pointer;
     flex-shrink: 0;
     min-width: 300px;
+    color: transparent;
 }
 .flip-card:hover .flip-inner{
     transform: rotateY(180deg);
@@ -223,7 +224,9 @@ body{
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    background-color: chocolate;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    color: black;
 }
 .flip-card-front, .flip-card-back{
     position: absolute;
@@ -233,6 +236,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
+
 }
  .flip-card-front{
     font-size: 2em;
