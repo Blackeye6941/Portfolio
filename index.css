@@ -180,13 +180,13 @@ body{
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5),
     inset 0 0 8px rgba(0, 0, 0, 0.6);
 } */
- #projects{
-    height: 90vh;
-    font-family: 'Hiro-Misake';
-    background-image: url(assets/images/page3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.section-combo{
+     height: 90vh;
+     font-family: 'Hiro-Misake';
+     background-image: url(assets/images/page3.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
  }
  .projects-title{
     text-align: left;
@@ -247,6 +247,7 @@ body{
     transform: rotateY(180deg);
     font-size: 18px;
  }
+ .
  /* .red-sun{
     position: absolute;
     top: 10%;
