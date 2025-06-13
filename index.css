@@ -23,6 +23,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
 }
 #home{
     background-image: url('assets/images/samurai.jpg');
@@ -181,7 +182,7 @@ body{
     inset 0 0 8px rgba(0, 0, 0, 0.6);
 } */
 .section-combo{
-     height: 90vh;
+     height: 100vh;
      font-family: 'Hiro-Misake';
      background-image: url(assets/images/page3.jpg);
      background-repeat: no-repeat;
@@ -191,7 +192,8 @@ body{
  .projects-title{
     text-align: left;
     font-size: 2.2em;
-    padding: 40px;
+    padding-left: 40px;
+    padding-top: 80px;
  }
  .project-list{
     display: flex;
@@ -247,7 +249,31 @@ body{
     transform: rotateY(180deg);
     font-size: 18px;
  }
- .
+.skills-title{
+    font-size: 2em;
+    padding-top: 100px;
+    color: #fff;
+    padding-left: 40px;
+}
+.skill-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+.skill-item{
+    padding: 60px;
+    color: #fff;
+}
+#contact{
+    height: 100vh;
+    font-family: 'Hiro-Misake';
+    padding-left: 40px;
+}
+.contact-form{
+    display: flex;
+}
  /* .red-sun{
     position: absolute;
     top: 10%;
