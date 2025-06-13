@@ -271,8 +271,28 @@ body{
     font-family: 'Hiro-Misake';
     padding-left: 40px;
 }
+.contact-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2em;
+
+}
 .contact-form{
+    position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 60px;
+    background-color: aliceblue;
+    width: 25vw;
+    padding: 30px;
+    gap: 30px;
+    min-width: 25vw;
+}
+#your-name{
+    margin-top: 40px;
 }
  /* .red-sun{
     position: absolute;
