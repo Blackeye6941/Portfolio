@@ -201,7 +201,7 @@ body{
     text-align: center;
     justify-content: center;
     gap: 10px;
-    overflow-x:auto;
+    overflow-y:scroll;
  }
  .flip-card{
     height: 35vh;
@@ -362,6 +362,12 @@ button{
 .image{
     width: 35px;
     height: 35px;
+}
+.project-link{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 90%;
 }
  /* .red-sun{
     position: absolute;
