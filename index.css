@@ -283,8 +283,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
-    margin-top: 60px;
+    height: 45vh;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 120px;
     background-color: aliceblue;
     width: 25vw;
     padding: 30px;
@@ -292,7 +294,19 @@ body{
     min-width: 25vw;
 }
 #your-name{
-    margin-top: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Papyrus', Georgia, serif;
+    font-weight: bold;
+
+}
+#contact-content{
+    resize: none;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Papyrus', Georgia, serif;
+    font-weight: bold;
 }
  /* .red-sun{
     position: absolute;
