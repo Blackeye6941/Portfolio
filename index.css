@@ -96,7 +96,7 @@ body{
     width: 70%;
     max-width: 780px;
     margin: 0 auto;
-    /* font-family: 'Hiro-Misake'; */
+    /*font-family: 'Hiro-Misake';*/
     font-family: 'Papyrus', 'Georgia', serif;
     font-size: 15px;
     /* min-height: 800px; */
@@ -127,9 +127,9 @@ body{
     max-height: 0;
     transition: max-height 2s ease;
 }
-/* .scroll-wrapper.open{
-    max-height: 600px;
-} */
+ .scroll-wrapper.open{
+    max-height: 1300px;
+}
 .scroll-upper, .scroll-lower{
     background: linear-gradient(
         to bottom,
@@ -182,76 +182,108 @@ body{
     inset 0 0 8px rgba(0, 0, 0, 0.6);
 } */
 .section-combo{
-     height: 100vh;
-     font-family: 'Hiro-Misake';
-     background-image: url(assets/images/page3.jpg);
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
- }
- .projects-title{
+    min-height: 100vh;
+    font-family: 'Hiro-Misake';
+    background-image: url('assets/images/page3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 20px 50px;
+}
+.projects-title{
     text-align: left;
     font-size: 2.2em;
     padding-left: 40px;
     padding-top: 80px;
  }
- .project-list{
+
+.project-list{
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
-    gap: 10px;
-    overflow-y:scroll;
- }
- .flip-card{
-    height: 35vh;
-    width: 20vw;
-    max-width: 100%;
-    padding: 20px;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.flip-card{
+    height: clamp(250px, 30vh, 350px);
+    width: clamp(250px, 20vw, 300px);
+    min-width: 250px;
     perspective: 1000px;
     cursor: pointer;
     flex-shrink: 0;
-    min-width: 300px;
-    color: transparent;
+    scroll-snap-align: center;
+    color:#fff;
 }
+
 .flip-card:hover .flip-inner{
     transform: rotateY(180deg);
 }
-.flip-card.flipped .flip-card-inner{
-    transform: rotateY(180deg);
-}
+
 .flip-inner{
     width: 100%;
     height: 100%;
     position: relative;
-    transition: transform 1s;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-    background-color: rgba(0,0,0,0.4);
+    background-color: var(--card-bg);
     border: 2px solid rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     color: #fff;
 }
+
 .flip-card-front, .flip-card-back{
     position: absolute;
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 20px;
-
+    border-radius: 18px;
 }
- .flip-card-front{
-    font-size: 2em;
-    text-align: center;
- }
- .flip-card-back{
+
+.flip-card-front{
+    font-size: clamp(1.5em, 4vw, 2em);
+    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+}
+
+.flip-card-back{
     transform: rotateY(180deg);
-    font-size: 18px;
- }
+    font-size: clamp(14px, 3vw, 18px);
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+    position: relative;
+}
+
+.flip-card-back p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.project-link-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.project-link{
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    transform: scale(1.1);
+}
+
 .skills-title{
     font-size: 2em;
-    padding-top: 100px;
+    padding-top: 160px;
     color: #fff;
     padding-left: 40px;
 }
